@@ -46,9 +46,31 @@ O sistema não é apenas um calendário: ele foi pensado como um **motor de otim
 
 ## 🎯 Por que esse projeto existe?
 
-- ✅ Demonstrar Proficiência em Ambientes de Produção: Implementar e documentar um fluxo de trabalho de desenvolvimento 100% containerizado. Isso valida a competência em **Docker, Laravel Sail e WSL2**, replicando o ambiente que empresas modernas utilizam para garantir portabilidade, consistência e resolver problemas complexos de rede e performance (como os documentados na seção Troubleshooting).
-- ✅ Validar a Arquitetura "Monolítica Moderna": Construir uma **Single Page Application (SPA)** reativa e de alta performance utilizando a stack **Laravel 11 + Vue 3.4**. O diferencial é o uso do **Inertia.js (2.x)** como a "ponte" que une a produtividade de um back-end robusto (Laravel) com a reatividade de um front-end moderno (Vue), sem a complexidade de gerenciar e versionar uma **API REST/GraphQL**.  
-- ✅ Resolver um Desafio de Lógica de Negócio Complexa: Mover o foco do "como" **(CRUD)** para o "porquê" **(valor de negócio)**. O núcleo do **AquaShift** é um motor de otimização de recursos. Isso envolve gerenciar **concorrência, restrições de tempo, alocação de múltiplos ativos (boxes, funcionários) e estados complexos (atrasos, no-shows)**, demonstrando habilidade em solucionar problemas algorítmicos do mundo real.
+O **AquaShift** nasceu como um projeto pessoal de estudo e prática profissional, com o objetivo de **simular o ambiente real de uma aplicação SaaS moderna**, mas também de **me desafiar a ir além do CRUD tradicional**.  
+Mais do que um sistema de agendamento para lava-jatos, ele é um **laboratório de experimentação full-stack**, onde aplico e documento todo o processo, da arquitetura à entrega.
+
+### 🧱 1. Reproduzir um ambiente de produção completo
+Quis construir o projeto **exatamente como uma empresa faria em produção**, utilizando ferramentas e práticas de mercado:  
+**Docker, Laravel Sail e WSL2**.  
+Com isso, aprendi a lidar com containers, redes internas, volumes, variáveis de ambiente e integração entre serviços (PHP, PostgreSQL, Node).  
+Esse fluxo me ajuda a dominar **deploys consistentes e portáveis**, além de entender o impacto real de performance e configuração em um stack realista.
+
+### ⚙️ 2. Aprender e validar a “Arquitetura Monolítica Moderna”
+Escolhi **Laravel + Vue + Inertia.js** por acreditar que essa combinação traz o melhor dos dois mundos:  
+um back-end poderoso e seguro, com um front-end reativo e fluido, sem a complexidade de uma API separada.  
+O projeto é uma **SPA (Single Page Application)** com renderização híbrida e comportamento dinâmico, ideal para demonstrar proficiência em **integração entre camadas** e otimização de fluxo entre back e front.
+
+### 🧩 3. Resolver problemas de lógica de negócio reais
+O motor central do AquaShift não é só um agendador.  
+É uma **engine de otimização de recursos**, que precisa lidar com **restrições, concorrência, no-shows, encaixes e atrasos**, além de distribuir horários conforme disponibilidade de boxes e serviços.  
+Aqui, pratico **modelagem de estados complexos e raciocínio algorítmico**, simulando desafios de sistemas reais, como agendamento hospitalar, logística ou operações.
+
+### 🚀 4. Consolidar uma base sólida de boas práticas
+Além da parte técnica, o projeto também representa minha busca por **organização e padrão profissional**.  
+Uso migrations e seeders para versionar o banco, **Spatie Permission** para controle de acesso granular (RBAC), e sigo um fluxo de desenvolvimento controlado por containers e scripts automatizados (Sail, npm, artisan).  
+Cada commit e etapa são pensados para reforçar o aprendizado e formar uma base que possa escalar para futuros projetos comerciais.
+
+> 💡 Em resumo: o AquaShift é o meu “campo de testes profissional”, onde pratico o que aprendo, documento o processo e provo, a mim mesma, que consigo transformar uma ideia em um sistema robusto, modular e preparado para o mundo real.
 
 [⬆️ Voltar ao sumário](#-sumário)
 
