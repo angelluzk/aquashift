@@ -99,8 +99,13 @@ class BranchController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Branch $branch): RedirectResponse
     {
-        //
+        // 1. Deleta a filial do banco de dados
+        $branch->delete();
+
+        // 2. Redireciona de volta para a listagem
+        return redirect()->route('admin.branches.index')
+                        ->with('message', 'Filial excluída com sucesso!');
     }
 }

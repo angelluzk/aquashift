@@ -1,15 +1,21 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, usePage } from '@inertiajs/vue3';
+import { Head, Link, usePage, useForm } from '@inertiajs/vue3';
 import { computed } from 'vue';
 
-// 1. Recebe a prop 'branches' que o Controller enviou
 defineProps({
-    branches: Array // Define que 'branches' é um Array (ou Object)
+    branches: Array
 });
 
 const page = usePage();
 const flashMessage = computed(() => page.props.flash?.message);
+const confirmDelete = (branchId) => {
+    if (window.confirm('Tem certeza que deseja excluir esta filial? Esta ação não pode ser desfeita.')) {
+        useForm({}).delete(route('admin.branches.destroy', branchId), {
+            preserveScroll: true, 
+        });
+    }
+};
 </script>
 
 <template>
@@ -69,6 +75,13 @@ const flashMessage = computed(() => page.props.flash?.message);
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                         <Link :href="route('admin.branches.edit', branch.id)" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-100">Editar</Link>
+
+                                        <button
+                                            @click="confirmDelete(branch.id)"
+                                            class="ms-2 text-red-600 dark:text-red-400 hover:text-red-900 dark:hover:text-red-100"
+                                        >
+                                            Deletar
+                                        </button>
                                     </td>
                                 </tr>
 
