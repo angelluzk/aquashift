@@ -20,18 +20,19 @@
 
 ## 📚 Sumário
 
-1. [Visão Geral](#-visão-geral)
-2. [Por que esse projeto existe?](#-por-que-esse-projeto-existe)
-3. [Funcionalidades Chave (Planejadas)](#-funcionalidades-chave-planejadas)
-4. [Objetivos Técnicos](#-objetivos-técnicos)
-5. [Arquitetura do Sistema](#-arquitetura-do-sistema)
-6. [Stack Tecnológica](#-stack-tecnológica)
-7. [Stack Tecnológica Detalhada](#-stack-tecnológica-detalhada)
-8. [Roadmap do Projeto](#-roadmap-do-projeto)
-9. [Guia de Instalação e Execução](#-guia-de-instalação-e-execução)
+1.  [Visão Geral](#-visão-geral)
+2.  [Por que esse projeto existe?](#-por-que-esse-projeto-existe)
+3.  [Funcionalidades Chave (Planejadas)](#-funcionalidades-chave-planejadas)
+4.  [Objetivos Técnicos](#-objetivos-técnicos)
+5.  [Arquitetura do Sistema](#-arquitetura-do-sistema)
+6.  [Stack Tecnológica](#-stack-tecnológica)
+7.  [Stack Tecnológica Detalhada](#-stack-tecnológica-detalhada)
+8.  [Roadmap do Projeto](#-roadmap-do-projeto)
+9.  [Guia de Instalação e Execução](#-guia-de-instalação-e-execução)
 10. [Solução de Problemas (Troubleshooting)](#-solução-de-problemas-troubleshooting)
-11. [Contribuição](#-contribuição)
-12. [Autoria](#-autoria)
+11. [ Diário de Comandos (Didático)](#-diário-de-comandos-didático)
+12. [Contribuição](#-contribuição)
+13. [Autoria](#-autoria)
 
 ---
 
@@ -401,6 +402,16 @@ Esta seção documenta problemas comuns encontrados durante o setup no ambiente 
 
 ---
 
+## 📓 Diário de Comandos (Didático)
+
+Para fins didáticos e para documentar o processo completo de setup, depuração de ambiente e desenvolvimento, um log completo de todos os comandos de terminal usados neste projeto (desde a instalação do WSL2 até os comandos do artisan) está disponível em um arquivo separado.
+
+Este documento é ideal para quem deseja replicar o ambiente ou entender a fundo o fluxo de trabalho:
+
+➡️ **[`COMMAND_LOG.md`](./COMMAND_LOG.md)**
+
+---
+
 ## 🪞 **Contribuição**
 
 Contribuições são bem-vindas!
@@ -410,6 +421,8 @@ Siga as boas práticas do repositório, mantendo **commits semânticos** e **pul
 feat: adiciona engine de otimização
 fix: corrige conflito de horários duplicados
 ```
+
+[⬆️ Voltar ao sumário](#-sumário)
 
 ---
 
