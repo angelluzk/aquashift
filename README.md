@@ -217,12 +217,12 @@ graph TD
   * [x] Definição dos relacionamentos Eloquent (Models).
   * [x] Instalação e configuração do `spatie/laravel-permission`.
   * [x] Criação do Seeder de Papéis e Permissões.
-* [ ] **Fase 4: Painel Admin (Em Andamento)**
+* [x] **Fase 4: Painel Admin**
 
-  * [ ] CRUD de Filiais (Branches) e Boxes (Bays).
-  * [ ] CRUD de Serviços (Services).
-  * [ ] CRUD de Usuários e atribuição de papéis.
-* [ ] **Fase 5: O Motor (Core Logic)**
+  * [x] CRUD de Filiais (Branches) e Boxes (Bays).
+  * [x] CRUD de Serviços (Services).
+  * [x] CRUD de Usuários e atribuição de papéis.
+* [ ] **Fase 5: O Motor (Core Logic) (Em Andamento)**
 
   * [ ] Implementar o serviço de "disponibilidade" (verificação de slots).
   * [ ] Criar a lógica de agendamento (o "motor de otimização").

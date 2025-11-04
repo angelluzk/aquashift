@@ -33,6 +33,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::resource('branches', \App\Http\Controllers\Admin\BranchController::class);
         Route::resource('bays', \App\Http\Controllers\Admin\BayController::class);
         Route::resource('services', \App\Http\Controllers\Admin\ServiceController::class);
+
+        Route::resource('users', \App\Http\Controllers\Admin\UserController::class)->middleware('role:Admin');
     });
 });
 
